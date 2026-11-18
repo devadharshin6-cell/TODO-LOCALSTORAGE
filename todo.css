@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: Arial, sans-serif;
+    background: #5a7481 url('download (2).jpg');
+    display: flex;
+    justify-content: center;
+    padding: 40px 15px;
+}
+
+.container {
+    background: white;
+    width: 500px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #5e35b1;
+}
+
+.subtitle {
+    text-align: center;
+    color: rgb(160, 91, 91);
+    margin: 10px 0 25px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #a2ac16;
+    border-radius: 6px;
+    min-width: 0;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    background: #673ab7;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.task-counts {
+    display: flex;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.count-box {
+    flex: 1;
+    background: #7f7e81;
+    text-align: center;
+    padding: 15px 5px;
+    border-radius: 8px;
+}
+
+.count-box h3 {
+    color: #3c00a3;
+    font-size: 24px;
+}
+
+.count-box p {
+    color: rgb(32, 9, 9);
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.filter-section {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.filter-section button {
+    flex: 1;
+    padding: 10px 5px;
+    font-size: 13px;
+}
+
+.filter-section button.active-filter {
+    background: #401fa3;
+}
+
+#taskList {
+    list-style: none;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #cec3cf;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+#taskList li span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(92, 19, 53);
+}
+
+.edit-btn {
+    background: #1ebb5f;
+}
+
+.delete-btn {
+    background: #e53935;
+}
+
+.clear-btn {
+    background: #680b0a;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.empty-message {
+    text-align: center;
+    color: rgb(22, 19, 19);
+    padding: 15px;
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .filter-section {
+        flex-wrap: wrap;
+    }
+
+    #taskList li {
+        flex-wrap: wrap;
+    }
+
+}
